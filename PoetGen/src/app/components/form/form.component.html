@@ -1,0 +1,6 @@
+<p>form works!</p>
+
+<label for="authors">Choose an author!</label>
+<select [(ngModel)]="selectedValue" id="authors" name="authors" (change)="test()">
+    <option *ngFor="let author of authorsList" [value]="author">{{author}}</option>
+</select>
