@@ -1,6 +1,13 @@
 <p>form works!</p>
-
 <label for="authors">Choose an author!</label>
-<select [(ngModel)]="selectedValue" id="authors" name="authors" (change)="test()">
+<select [(ngModel)]="selectedValue" id="authors" name="authors" (change)="getAuthorTitles()">
     <option *ngFor="let author of authorsList" [value]="author">{{author}}</option>
 </select>
+
+<ul *ngIf="authorTitles">
+    <li *ngFor="let title of authorTitles" (value)="title" (click)="getAuthorPoetry(title)"> {{title.title}}</li>
+</ul>
+
+
+<p *ngIf="this.loading">Loading...</p>
+<p *ngIf="this.error">{{ this.error }}</p>
