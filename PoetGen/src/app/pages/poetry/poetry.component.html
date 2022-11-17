@@ -1,1 +1,5 @@
-<p>poetry works!</p>
+
+<div *ngIf="this.text">
+    <p *ngFor="let line of text.lines"> {{line.replace("","-")}}</p>
+
+</div>
