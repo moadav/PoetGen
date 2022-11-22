@@ -8,7 +8,7 @@
 </div>
 
 <ul  *ngIf="authorTitles">
-    <li *ngFor="let title of authorTitles" (click)="getAuthorPoetry(title)" (value)="title">{{title.title}} </li>
+    <li class="AuthorTitles" *ngFor="let title of authorTitles" (click)="getAuthorPoetry(title)" (value)="title">{{title.title}} </li>
 </ul>
 
 <p *ngIf="this.loading">Loading...</p>

@@ -1,5 +1,6 @@
 
 <div *ngIf="this.text">
-    <p *ngFor="let line of text.lines"> {{line.replace("","-")}}</p>
+    <h1>{{this.title}}</h1>
+    <p *ngFor="let line of text.lines"> {{line.length > 1 ? line : line.replace("","-")}}</p>
 
 </div>
