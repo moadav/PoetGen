@@ -7,12 +7,14 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
 import { FormComponent } from './components/form/form.component';
 import { PoetryComponent } from './pages/poetry/poetry.component';
+import { QuotesComponent } from './pages/quotes/quotes.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FormComponent,
-    PoetryComponent
+    PoetryComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,
