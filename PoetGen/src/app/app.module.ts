@@ -8,13 +8,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { FormComponent } from './components/form/form.component';
 import { PoetryComponent } from './pages/poetry/poetry.component';
 import { QuotesComponent } from './pages/quotes/quotes.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FormComponent,
     PoetryComponent,
-    QuotesComponent
+    QuotesComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
