@@ -1,0 +1,19 @@
+.AuthorChoose{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    border: solid 5px purple;
+    border-radius: 22px;
+    background-color: purple;
+    padding: 5px;
+    
+}
+
+.AuthorLabelText{
+    font-size: 25px;
+    margin: auto;
+}
+select{
+    height: 2em;
+}
