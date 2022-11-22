@@ -10,7 +10,7 @@ export class QuotesApiService {
 
   constructor(private readonly http: HttpClient) { }
 
-  public getAuthors(): Observable<Quotes | undefined> {
-    return this.http.get<Quotes>('https://type.fit/api/quotes');  
+  public getQuotes(): Observable<Quotes[] | undefined> {
+    return this.http.get<Quotes[]>('https://type.fit/api/quotes');  
   }
 }

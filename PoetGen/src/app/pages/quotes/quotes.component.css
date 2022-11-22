@@ -1,0 +1,24 @@
+button{
+    background-color:orange;
+    padding:1.3em;
+    border-radius: 0.6em;
+    margin: auto;
+}
+
+.QuoteBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+}
+p{
+    text-align: center;
+    font-size: 2em;
+}
+
+section{
+    margin-top: 2em;
+    border: 0.5em solid;
+    background-color: green;
+
+}
