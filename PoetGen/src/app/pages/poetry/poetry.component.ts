@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { ActivatedRoute, Route, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AuthorPoetry } from 'src/app/models/authorPoetry';
 
 @Component({

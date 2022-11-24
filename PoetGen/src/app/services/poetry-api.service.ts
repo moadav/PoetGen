@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Authors } from '../models/authors.model';
-import { finalize, map, Observable} from 'rxjs';
+import { Observable} from 'rxjs';
 import { AuthorTitle } from '../models/authorTitle.model';
 import { AuthorPoetry } from '../models/authorPoetry';
 
