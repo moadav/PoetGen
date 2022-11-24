@@ -21,7 +21,6 @@ public selectedValue:any
 public authorTitles:any
 public authorPoetry:any
 ngOnInit(): void {
-  this.loading = true;
   this.getAllAuthors();
 
       
@@ -31,7 +30,7 @@ constructor(private readonly poetryApiService: PoetryApiService, private route: 
   }
 
   public getAllAuthors():void{
-    
+    this.loading = true;
     this.poetryApiService.getAuthors().subscribe({
       next: (response: Authors | undefined) => {
         this.authorsList = response!.authors;
@@ -52,10 +51,10 @@ constructor(private readonly poetryApiService: PoetryApiService, private route: 
   }
 
   public getAuthorTitles():void{
-   
+    this.loading = true;
     this.poetryApiService.getAuthorTitles(this.selectedValue).subscribe({
       next: (response: AuthorTitle[] | undefined) => {
-        this.loading = true;
+      
         this.authorTitles = response;        
       },
       error: ( response:any) => {
@@ -74,9 +73,7 @@ constructor(private readonly poetryApiService: PoetryApiService, private route: 
       next: (response: AuthorPoetry[] | undefined) => {
         
         this.authorPoetry = response;
-        this.route.navigate(['/Poetry'], { state: { data: this.authorPoetry} });
-
-                
+        this.route.navigate(['/Poetry'], { state: { data: this.authorPoetry} });         
       },
       error: ( response:any) => {
         this.error = response;
