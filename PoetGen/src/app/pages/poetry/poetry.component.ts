@@ -22,9 +22,11 @@ public title:string = "";
    
   }
 
-private ConvertRouteToText(obj:any):void{ 
-  console.log(obj.data[0]);
-  
+  /**
+   * 
+   * @param obj The object containing the author poetry model
+   */
+private ConvertRouteToText(obj:any):void{   
   if(obj.data[0]) {
     this.text = obj.data[0];
     this.title = this.text.title;

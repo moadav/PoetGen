@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { finalize } from 'rxjs';
+import { Router } from '@angular/router';
 import { AuthorPoetry } from 'src/app/models/authorPoetry';
 import { Authors } from 'src/app/models/authors.model';
 import { AuthorTitle } from 'src/app/models/authorTitle.model';
@@ -29,6 +28,12 @@ ngOnInit(): void {
 constructor(private readonly poetryApiService: PoetryApiService, private route: Router) { 
   }
 
+  /*
+  * A function that retrieves all Authors and sets the authorList value to the value
+  *
+  * 
+  */
+
   public getAllAuthors():void{
     this.loading = true;
     this.poetryApiService.getAuthors().subscribe({
@@ -50,6 +55,9 @@ constructor(private readonly poetryApiService: PoetryApiService, private route: 
     
   }
 
+  /*
+  A function that retrieves the author poetry titles
+  */
   public getAuthorTitles():void{
     this.loading = true;
     this.poetryApiService.getAuthorTitles(this.selectedValue).subscribe({
@@ -68,6 +76,11 @@ constructor(private readonly poetryApiService: PoetryApiService, private route: 
   
   }
 
+  /**
+   * 
+   * A function that gets the poetry of the author
+   * @param value The title of the author poetry
+   */
   public getAuthorPoetry(value:any): void {
     this.loading = true;
     this.poetryApiService.getAuthorTitlePoetry(this.selectedValue, value.title).subscribe({

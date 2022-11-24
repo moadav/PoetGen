@@ -20,12 +20,20 @@ public quoteArray:Quotes[] | undefined = [];
     this.getAllQuotes();
   }
 
+  /**
+   * Generates a random number and gets a single quote
+   *  from an quote Array with the random number location as the position
+   */
   public generateRandom():void{
     const random = Math.floor(Math.random() * this.quoteArray!.length);
     this.quote = this.quoteArray![random].text;
     this.quoteAuthor = this.quoteArray![random].author
 
   }
+
+  /**
+   * Gets all quotes from the api
+   */
   public getAllQuotes():void{
     this.loading = true;
     this.quotesApi.getQuotes().subscribe({
