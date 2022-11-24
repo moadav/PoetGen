@@ -32,4 +32,4 @@ You can also add an -o to the command to open the localhost server automatically
 ng serve -o
 ```
 ## License
-This angular application is made by Mohammed Ali Davami and Simon Aannestad Sutterud
+This angular application is made by Mohammed Ali Davami
