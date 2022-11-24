@@ -69,6 +69,7 @@ constructor(private readonly poetryApiService: PoetryApiService, private route: 
   }
 
   public getAuthorPoetry(value:any): void {
+    this.loading = true;
     this.poetryApiService.getAuthorTitlePoetry(this.selectedValue, value.title).subscribe({
       next: (response: AuthorPoetry[] | undefined) => {
         
@@ -78,6 +79,9 @@ constructor(private readonly poetryApiService: PoetryApiService, private route: 
       error: ( response:any) => {
         this.error = response;
         this.isError = true;
+      },
+      complete: () => {
+        this.loading = false;
       }
   })
     
