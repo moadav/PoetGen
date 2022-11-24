@@ -1,9 +1,10 @@
 
 
 <div class="QuoteBody">
-<button (click)="generateRandom()">Click for Random quote</button>
-<section *ngIf="this.quote || this.quoteAuthor">
-    <p>{{this.quote}}</p>
-    <p>{{this.quoteAuthor ? "-"+this.quoteAuthor : ""}}</p>
-</section>
+    <section *ngIf="this.quote || this.quoteAuthor">
+        <p>{{this.quote}}</p>
+        <p>{{this.quoteAuthor ? "-"+this.quoteAuthor : ""}}</p>
+    </section>
+    <button (click)="generateRandom()">Click for Random quote</button>
+
 </div>

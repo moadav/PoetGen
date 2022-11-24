@@ -17,8 +17,8 @@ p{
 }
 
 section{
-    margin-top: 2em;
     border: 0.5em solid;
     background-color: green;
+    margin-bottom: 1em;
 
 }
