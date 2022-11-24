@@ -8,3 +8,6 @@
     <button (click)="generateRandom()">Click for Random quote</button>
 
 </div>
+
+<p *ngIf="this.loading">Loading...</p>
+<p *ngIf="this.isError"> {{this.error}}</p>

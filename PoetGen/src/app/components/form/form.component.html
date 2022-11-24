@@ -10,8 +10,8 @@
 <ul  *ngIf="authorTitles">
     <li class="AuthorTitles" *ngFor="let title of authorTitles" (click)="getAuthorPoetry(title)" (value)="title">{{title.title}} </li>
 </ul>
+</div>
+
 
 <p *ngIf="this.loading">Loading...</p>
-<p *ngIf="this.error">{{ this.error }}</p>
-
-</div>
+<p *ngIf="this.isError">{{ this.error }}</p>

@@ -9,6 +9,7 @@ import { QuotesApiService } from 'src/app/services/quotes-api.service';
 })
 export class QuotesComponent implements OnInit {
 public loading: boolean = false;
+public isError: boolean = false;
 public error:string = "";
 public quote: string = "";
 public quoteAuthor: string = "";
@@ -34,9 +35,8 @@ public quoteArray:Quotes[] | undefined = [];
       
       },
       error: ( response:any) => {
-        this.error = response;
-        console.log(response);
-        
+        this.isError = true;
+        this.error = response;        
       }
     });
     this.loading = false;
