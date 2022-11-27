@@ -26,7 +26,7 @@ ng serve
 ```
 and navigate to `http://localhost:4200/`.
 
-You can also add an -o to the command to open the localhost server automatically:
+You can also add an -o to the command to open the localhost browser location automatically:
 
 ```
 ng serve -o
