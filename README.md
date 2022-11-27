@@ -4,7 +4,7 @@ An application to read poems or get a random quote!
 
 ## Description
 
-PoetGen is an application where you first kan select an author of your liking. Then there will appear a dropdown of different poems written by that author which you can click. When clicked you will navigate to Poetry page where it will display the poetry to the corresponding title. You can also navigate to the quote page by using the navigation bar. When navigated, you can press the button to recieve a random quote. 
+PoetGen is an application where you first can select an author of your liking. Then there will appear a dropdown of different poems written by that author which you can click. When clicked you will navigate to Poetry page where it will display the poetry to the corresponding title. You can also navigate to the quote page by using the navigation bar. When navigated, you can press the button to recieve a random quote. 
 
 ## Install
 
